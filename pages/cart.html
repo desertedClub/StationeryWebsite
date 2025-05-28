@@ -1,0 +1,183 @@
+<div class="cart-wrapper">
+    <div class="container">
+        <div class="row g-4">
+            <div class="container">
+                <p>Искате ли да влезете в <a href="#account">профила си</a>, за да следите поръчките си по-лесно?</p>
+            </div>
+            <!-- Cart Items Section -->
+            <div class="col-lg-8">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <h4 class="mb-0">Количка</h4>
+                    <span class="text-muted">3 продукта</span>
+                </div>
+
+                <!-- Product Cards -->
+                <div class="d-flex flex-column gap-3">
+                    <!-- Product 1 -->
+                    <div class="product-card p-3 shadow-sm">
+                        <div class="row align-items-center">
+                            <div class="col-md-2">
+                                <img src="https://ae01.alicdn.com/kf/S4856dd1028664cf0b0c38f1c34e39e1dm.jpg"
+                                    alt="Product" class="product-image">
+                            </div>
+                            <div class="col-md-4">
+                                <h6 class="mb-1">Детска магнитна бяла дъска</h6>
+                                <p class="text-muted mb-0">Зелено</p>
+                                <span class="discount-badge mt-2">20%</span>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="d-flex align-items-center gap-2">
+                                    <button class="quantity-btn" onclick="updateQuantity(1, -1)">-</button>
+                                    <input type="number" class="quantity-input" value="1" min="1">
+                                    <button class="quantity-btn" onclick="updateQuantity(1, 1)">+</button>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <span class="fw-bold normal-price">12,20 лв.</span>
+                                <span class="fw-bold discount-price">9.56 лв</span>
+                            </div>
+                            <div class="col-md-1">
+                                <i class="bi bi-trash remove-btn"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="product-card p-3 shadow-sm">
+                        <div class="row align-items-center">
+                            <div class="col-md-2">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr-pakgZHg7_rvRskYcrC5LCDZ48gAIv0Z0Q&s"
+                                    alt="Product" class="product-image">
+                            </div>
+                            <div class="col-md-4">
+                                <h6 class="mb-1">Класьор за документи, 75мм</h6>
+                                <p class="text-muted mb-0">Синьо</p>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="d-flex align-items-center gap-2">
+                                    <button class="quantity-btn" onclick="updateQuantity(2, -1)">-</button>
+                                    <input type="number" class="quantity-input" value="3" min="1">
+                                    <button class="quantity-btn" onclick="updateQuantity(2, 1)">+</button>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <span class="fw-bold">8,85 лв</span>
+                            </div>
+                            <div class="col-md-1">
+                                <i class="bi bi-trash remove-btn"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="product-card p-3 shadow-sm">
+                        <div class="row align-items-center">
+                            <div class="col-md-2">
+                                <img src="https://www.fshop.bg/image_ad/business_ad/24515/24515_eaea3cb2010c7fe6c83b6c8cac38aaa02424.jpg"
+                                    alt="Product" class="product-image">
+                            </div>
+                            <div class="col-md-4">
+                                <h6 class="mb-1">Органайзер за бюро, пластмасов, различни цветове</h6>
+                                <p class="text-muted mb-0">Розово</p>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="d-flex align-items-center gap-2">
+                                    <button class="quantity-btn" onclick="updateQuantity(3, -1)">-</button>
+                                    <input type="number" class="quantity-input" value="1" min="1">
+                                    <button class="quantity-btn" onclick="updateQuantity(3, 1)">+</button>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <span class="fw-bold">11,99 лв</span>
+                            </div>
+                            <div class="col-md-1">
+                                <i class="bi bi-trash remove-btn"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Summary Section -->
+            <div class="col-lg-4">
+                <div class="summary-card p-4 shadow-sm">
+                    <h5 class="mb-4">Детайли за поръчката</h5>
+
+                    <div class="d-flex justify-content-between mb-3">
+                        <span class="text-muted">Оригинална сума:</span>
+                        <span>33,04 лв</span>
+                    </div>
+                    <div class="d-flex justify-content-between mb-3">
+                        <span class="text-muted">Отстъпка:</span>
+                        <span class="text-success">-2,44 лв</span>
+                    </div>
+                    <div class="d-flex justify-content-between mb-3">
+                        <span class="text-muted">Доставка:</span>
+                        <span>Безплатна</span>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between mb-4">
+                        <span class="fw-bold">Обща сума:</span>
+                        <span class="fw-bold">30,60 лв</span>
+                    </div>
+
+                    <button class="btn btn-primary checkout-btn w-100 mb-3">
+                        Продължи към плащане
+                    </button>
+
+                    <div class="d-flex justify-content-center gap-2">
+                        <i class="bi bi-shield-check text-success"></i>
+                        <small class="text-muted">Сигурно плащане</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const container = document.querySelector('.d-flex.flex-column.gap-3')
+        const cart = JSON.parse(localStorage.getItem('cart')) || []
+
+        let total = 0
+
+        cart.forEach((item, index) => {
+            const subtotal = item.price * item.quantity
+            total += subtotal
+
+            const div = document.createElement('div')
+            div.className = "product-card p3 shadow-sm"
+            div.innerHTML = `
+                <div class="row align-items-center">
+                    <div class="col-md-2">
+                        <img src="${item.image}" alt="${item.title}" class="product-image">
+                    </div>
+                    <div class="col-md-4">
+                    <h6 class="mb-1">${item.title}</h6>
+                    <p class="text-muted mb-0">стил 1</p>
+                </div>
+                <div class="col-md-3">
+                    <div class="d-flex align-items-center gap-2">
+                        <button class="quantity-btn" data-id="${item.id}" data-change="-1">-</button>
+                        <input type="number" class="quantity-input" value="${item.quantity}" min="1">
+                        <button class="quantity-btn" data-id="${item.id}" data-change="1">+</button>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <span class="fw-bold">${subtotal.toFixed(2)} лв</span>
+                </div>
+                <div class="col-md-1">
+                    <i class="bi bi-trash remove-btn" data-id="${item.id}"></i>
+                </div>
+            </div>
+
+
+                        `
+
+            container.appendChild(div)
+        })
+
+        document.querySelectorAll('.summary-card span.fw-bold')[1].textContent = total.toFixed(2) + ' лв'
+    })
+</script>
